@@ -4,7 +4,7 @@ KEYWORDS = "CHARLES & KEITH"
 LOGIN_TYPE = "qrcode"  # qrcode or phone or cookie
 COOKIES = ""
 SORT_TYPE = "popularity_descending"  # 具体值参见media_platform.xxx.field下的枚举值，展示只支持小红书
-CRAWLER_TYPE = "search" # 爬取类型，search(关键词搜索) | detail(帖子相亲)| creator(创作者主页数据)
+CRAWLER_TYPE = "search" # 爬取类型，search (关键词搜索) | detail (帖子相亲)| creator (创作者主页数据)
 
 # 是否开启 IP 代理
 ENABLE_IP_PROXY = False
@@ -25,7 +25,7 @@ SAVE_DATA_OPTION = "json"  # csv or db or json
 USER_DATA_DIR = "%s_user_data_dir"  # %s will be replaced by platform name
 
 # 爬取视频/帖子的数量控制
-CRAWLER_MAX_NOTES_COUNT = 1
+CRAWLER_MAX_NOTES_COUNT = 5
 
 # 并发爬虫数量控制
 MAX_CONCURRENCY_NUM = 1
@@ -35,9 +35,9 @@ ENABLE_GET_COMMENTS = True
 
 # 指定小红书需要爬虫的笔记ID列表
 XHS_SPECIFIED_ID_LIST = [
-    "6422c2750000000027000d88",
-    "64ca1b73000000000b028dd2",
-    "630d5b85000000001203ab41",
+    "6643915e000000001e01d571",
+    # "64ca1b73000000000b028dd2",
+    # "630d5b85000000001203ab41",
     # ........................
 ]
 
@@ -70,6 +70,6 @@ WEIBO_SPECIFIED_ID_LIST = [
 
 # 指定小红书创作者ID列表
 XHS_CREATOR_ID_LIST = [
-    "63e36c9a000000002703502b",
+
     # ........................
 ]
